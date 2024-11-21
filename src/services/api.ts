@@ -61,7 +61,7 @@ export const fetchNews = async (apiKey: string): Promise<NewsItem[]> => {
             model: "gpt-3.5-turbo",
             messages: [{
               role: "system",
-              content: "Analyze the following forex news. Return a JSON with score (number between -1 and 1, where -1 is very bearish and 1 is very bullish) and a brief analysis."
+              content: "Analyze the following forex news. Return a JSON with score (number between -1 and 1, where -1 is very bearish and 1 is very bullish) and a brief analysis in french."
             }, {
               role: "user",
               content: `${item.title}\n${item.content}`
