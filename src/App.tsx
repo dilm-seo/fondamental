@@ -89,7 +89,7 @@ function App() {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center">
               <Newspaper className="w-6 h-6 text-gray-600" />
-              <h2 className="text-xl font-semibold text-gray-900 ml-2">Latest Market News</h2>
+              <h2 className="text-xl font-semibold text-gray-900 ml-2">News</h2>
             </div>
             {newsLoading && <LoadingSpinner />}
           </div>
