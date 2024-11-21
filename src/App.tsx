@@ -24,7 +24,7 @@ function App() {
     () => fetchNews(apiKey),
     { 
       enabled: !!apiKey,
-      refetchInterval: 300000, // Refetch every 5 minutes
+      refetchInterval: 3000000, // Refetch every 50 minutes
       retry: 2,
       onError: (error) => {
         toast.error(`Error: ${error.message}`);
